@@ -6,7 +6,7 @@ export default function Overlay() {
     const {colors, selectedColor} = useSnapshot(state);
 
     return (
-        <footer className="mx-auto">
+        <div className="mx-auto">
             <p className='text-xl font-semibold'>Change Colors !</p>
             <ul className='list-none mb-10 flex gap-4'>
                 {colors.map((color) => (
@@ -20,5 +20,5 @@ export default function Overlay() {
                     ></li>
                 ))}
             </ul>
-        </footer>);
+        </div>);
 }
